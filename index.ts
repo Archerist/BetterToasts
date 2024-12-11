@@ -59,7 +59,7 @@ export default class BetterToasts {
     private addItem(el: HTMLElement){
         this.#drawregion.appendChild(el)
 
-        if (this.#drawregion.childNodes.length > this.#maxNumberOfToasts) {
+        if (this.#drawregion.children.length > this.#maxNumberOfToasts) {
             let rmel = this.#drawregion.children.item(0) as HTMLElement
             if (rmel) this.removeItem(rmel)
         }
